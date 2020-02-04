@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "LFTipsGuideView.h"
+#import "NSObject+LFTipsGuideView.h"
+
+#import "LFTipsGuideManager.h"
 
 @interface ViewController ()
 
@@ -24,11 +26,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (IBAction)startAction:(id)sender {
-    LFTipsGuideView *guide = [LFTipsGuideView new];
-    [guide showInView:self.navigationController.view maskViews:@[self.button1,self.button2,self.button3,self.button4,self.button5] withTips:@[@"点击此处进行搜索",@"点击此处进行编辑",@"举报用户",@"点击此处进行用于注册",@"..."]];
+
+    [self lf_showInView:self.navigationController.view maskViews:@[self.button1,self.button2,self.button3,self.button4,self.button5] withTips:@[@"点击此处进行搜索",@"点击此处进行编辑",@"举报用户",@"点击此处进行用于注册",@"..."]];
+}
+
+- (IBAction)clearAction:(id)sender {
+    [[LFTipsGuideManager manager] removeClass:self.class];
 }
 
 - (IBAction)buttonAction:(id)sender {

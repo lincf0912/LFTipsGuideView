@@ -113,7 +113,6 @@
     if (self) {
         self.index = 0;
         self.count = 0;
-        self.times = 1;
         self.layer.zPosition = 1;
         [self addSubview:self.topMaskView];
         [self addSubview:self.bottomMaskView];

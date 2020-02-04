@@ -15,9 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) void (^didShowTips)(NSInteger index);
 @property (nonatomic, copy, nullable) void (^completion)(void);
 
-// 提示次数，默认1次。（相同数据情况下，再次调用也不会显示）
-@property (nonatomic, assign) NSUInteger times;
-
 
 /// 弹出提示界面
 /// @param view 在某个视图上。建议在keywindow。

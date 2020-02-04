@@ -84,6 +84,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="XD3-j8-9e6">
+                        <barButtonItem key="leftBarButtonItem" title="clear" id="uq9-vz-3BI">
+                            <connections>
+                                <action selector="clearAction:" destination="BYZ-38-t0r" id="5kx-bM-8bm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="start" id="BSm-go-uhH">
                             <connections>
                                 <action selector="startAction:" destination="BYZ-38-t0r" id="o1h-qK-vht"/>

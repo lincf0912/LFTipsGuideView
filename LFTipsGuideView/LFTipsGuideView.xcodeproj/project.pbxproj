@@ -15,6 +15,8 @@
 		3B8B0C8623E8220B00148D0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B0C8523E8220B00148D0B /* main.m */; };
 		3B8B0C8F23E8253900148D0B /* LFTipsGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B0C8E23E8253900148D0B /* LFTipsGuideView.m */; };
 		3B8B0C9123E9031500148D0B /* LFTipsGuideView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B8B0C9023E9031500148D0B /* LFTipsGuideView.bundle */; };
+		3B8B0C9423E91A4E00148D0B /* LFTipsGuideManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B0C9323E91A4E00148D0B /* LFTipsGuideManager.m */; };
+		3B8B0C9723E91ABA00148D0B /* NSObject+LFTipsGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B0C9623E91ABA00148D0B /* NSObject+LFTipsGuideView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		3B8B0C8D23E8253900148D0B /* LFTipsGuideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFTipsGuideView.h; sourceTree = "<group>"; };
 		3B8B0C8E23E8253900148D0B /* LFTipsGuideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFTipsGuideView.m; sourceTree = "<group>"; };
 		3B8B0C9023E9031500148D0B /* LFTipsGuideView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LFTipsGuideView.bundle; sourceTree = "<group>"; };
+		3B8B0C9223E91A4E00148D0B /* LFTipsGuideManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFTipsGuideManager.h; sourceTree = "<group>"; };
+		3B8B0C9323E91A4E00148D0B /* LFTipsGuideManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFTipsGuideManager.m; sourceTree = "<group>"; };
+		3B8B0C9523E91ABA00148D0B /* NSObject+LFTipsGuideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+LFTipsGuideView.h"; sourceTree = "<group>"; };
+		3B8B0C9623E91ABA00148D0B /* NSObject+LFTipsGuideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LFTipsGuideView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 				3B8B0C8D23E8253900148D0B /* LFTipsGuideView.h */,
 				3B8B0C8E23E8253900148D0B /* LFTipsGuideView.m */,
 				3B8B0C9023E9031500148D0B /* LFTipsGuideView.bundle */,
+				3B8B0C9223E91A4E00148D0B /* LFTipsGuideManager.h */,
+				3B8B0C9323E91A4E00148D0B /* LFTipsGuideManager.m */,
+				3B8B0C9523E91ABA00148D0B /* NSObject+LFTipsGuideView.h */,
+				3B8B0C9623E91ABA00148D0B /* NSObject+LFTipsGuideView.m */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -160,6 +170,8 @@
 			files = (
 				3B8B0C7B23E8220600148D0B /* ViewController.m in Sources */,
 				3B8B0C7523E8220600148D0B /* AppDelegate.m in Sources */,
+				3B8B0C9423E91A4E00148D0B /* LFTipsGuideManager.m in Sources */,
+				3B8B0C9723E91ABA00148D0B /* NSObject+LFTipsGuideView.m in Sources */,
 				3B8B0C8623E8220B00148D0B /* main.m in Sources */,
 				3B8B0C8F23E8253900148D0B /* LFTipsGuideView.m in Sources */,
 			);
