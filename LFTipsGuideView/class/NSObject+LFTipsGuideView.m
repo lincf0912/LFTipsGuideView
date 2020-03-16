@@ -39,7 +39,7 @@
     [[LFTipsGuideManager manager] writeClass:self.class maskRects:rects withTips:tipsArr times:times];
     if ([[LFTipsGuideManager manager] isValidWithClass:self.class maskRects:rects withTips:tipsArr]) {
         LFTipsGuideView *guide = [LFTipsGuideView new];
-        [guide showInView:view maskRects:rects withTips:tipsArr];        
+        [guide showInView:view maskRects:rects withTips:tipsArr];
     }
 }
 

@@ -171,7 +171,7 @@
         
         {
             CGRect tmpRect = _tipsLabel.frame;
-            tmpRect.origin = CGPointMake(CGRectGetMaxX(_arrowView.frame)+tipsLabelLeftMargin, CGRectGetMaxY(_arrowView.frame)+tipsLabelTopMargin);
+            tmpRect.origin = CGPointMake(MIN(CGRectGetMaxX(_arrowView.frame)+tipsLabelLeftMargin,width-tmpRect.size.width-tipsLabelLeftMargin), CGRectGetMaxY(_arrowView.frame)+tipsLabelTopMargin);
             _tipsLabel.frame = tmpRect;
         }
         
@@ -196,7 +196,7 @@
         
         {
             CGRect tmpRect = _tipsLabel.frame;
-            tmpRect.origin = CGPointMake(CGRectGetMinX(_arrowView.frame)-tipsLabelLeftMargin-tmpRect.size.width, CGRectGetMaxY(_arrowView.frame)+tipsLabelTopMargin);
+            tmpRect.origin = CGPointMake(MAX(CGRectGetMinX(_arrowView.frame)-tipsLabelLeftMargin-tmpRect.size.width,tipsLabelLeftMargin), CGRectGetMaxY(_arrowView.frame)+tipsLabelTopMargin);
             _tipsLabel.frame = tmpRect;
         }
         
@@ -220,7 +220,7 @@
         
         {
             CGRect tmpRect = _tipsLabel.frame;
-            tmpRect.origin = CGPointMake(CGRectGetMaxX(_arrowView.frame)+tipsLabelLeftMargin, CGRectGetMinY(_arrowView.frame)-tipsLabelTopMargin-tmpRect.size.height);
+            tmpRect.origin = CGPointMake(MIN(CGRectGetMaxX(_arrowView.frame)+tipsLabelLeftMargin,width-tmpRect.size.width-tipsLabelLeftMargin), CGRectGetMinY(_arrowView.frame)-tipsLabelTopMargin-tmpRect.size.height);
             _tipsLabel.frame = tmpRect;
         }
         
@@ -246,7 +246,7 @@
         
         {
             CGRect tmpRect = _tipsLabel.frame;
-            tmpRect.origin = CGPointMake(CGRectGetMinX(_arrowView.frame)-tipsLabelLeftMargin-tmpRect.size.width, CGRectGetMinY(_arrowView.frame)-tipsLabelTopMargin-tmpRect.size.height);
+            tmpRect.origin = CGPointMake(MAX(CGRectGetMinX(_arrowView.frame)-tipsLabelLeftMargin-tmpRect.size.width, tipsLabelLeftMargin), CGRectGetMinY(_arrowView.frame)-tipsLabelTopMargin-tmpRect.size.height);
             _tipsLabel.frame = tmpRect;
         }
         
@@ -374,7 +374,7 @@
         tipsLabel.text = @"";
         tipsLabel.numberOfLines = 0;
         tipsLabel.textColor = [UIColor whiteColor];
-        tipsLabel.font = [UIFont systemFontOfSize:14];
+        tipsLabel.font = [UIFont boldSystemFontOfSize:15.0];
         [tipsLabel sizeToFit];
         _tipsLabel = tipsLabel;
         
