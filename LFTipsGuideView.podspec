@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'LFTipsGuideView'
-s.version      = '1.0.0'
+s.version      = '1.0.1'
 s.summary      = 'tips guide'
 s.homepage     = 'https://github.com/lincf0912/LFTipsGuideView'
 s.license      = 'MIT'
